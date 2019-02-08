@@ -1,0 +1,4 @@
+compile
+eclipse with-source=true
+runMain
+runMain com.lightbend.akka.sample.AkkaQuickstart

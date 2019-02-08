@@ -1,0 +1,29 @@
+[0m[[0m[0minfo[0m] [0m[0mPackaging /home/coding/git/adie-akka-learning/target/scala-2.12/adie-akka-learning_2.12-1.0.jar ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mInput file mappings:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	dhie[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/coding/git/adie-akka-learning/target/scala-2.12/classes/dhie[0m
+[0m[[0m[0mdebug[0m] [0m[0m	com/lightbend/akka[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/coding/git/adie-akka-learning/target/scala-2.12/classes/com/lightbend/akka[0m
+[0m[[0m[0mdebug[0m] [0m[0m	com/lightbend/akka/sample/Greeter.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/coding/git/adie-akka-learning/target/scala-2.12/classes/com/lightbend/akka/sample/Greeter.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	com/lightbend/akka/sample/Greeter$WhoToGreet.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/coding/git/adie-akka-learning/target/scala-2.12/classes/com/lightbend/akka/sample/Greeter$WhoToGreet.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	com/lightbend[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/coding/git/adie-akka-learning/target/scala-2.12/classes/com/lightbend[0m
+[0m[[0m[0mdebug[0m] [0m[0m	com/lightbend/akka/sample/Printer$Greeting.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/coding/git/adie-akka-learning/target/scala-2.12/classes/com/lightbend/akka/sample/Printer$Greeting.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	com/lightbend/akka/sample/Greeter$Greet.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/coding/git/adie-akka-learning/target/scala-2.12/classes/com/lightbend/akka/sample/Greeter$Greet.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	com/lightbend/akka/sample[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/coding/git/adie-akka-learning/target/scala-2.12/classes/com/lightbend/akka/sample[0m
+[0m[[0m[0mdebug[0m] [0m[0m	dhie/learn/BasicActor.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/coding/git/adie-akka-learning/target/scala-2.12/classes/dhie/learn/BasicActor.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	dhie/learn[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/coding/git/adie-akka-learning/target/scala-2.12/classes/dhie/learn[0m
+[0m[[0m[0mdebug[0m] [0m[0m	com/lightbend/akka/sample/Printer.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/coding/git/adie-akka-learning/target/scala-2.12/classes/com/lightbend/akka/sample/Printer.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	com[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/coding/git/adie-akka-learning/target/scala-2.12/classes/com[0m
+[0m[[0m[0mdebug[0m] [0m[0m	com/lightbend/akka/sample/AkkaQuickstart.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/coding/git/adie-akka-learning/target/scala-2.12/classes/com/lightbend/akka/sample/AkkaQuickstart.class[0m
+[0m[[0m[0minfo[0m] [0m[0mDone packaging.[0m
