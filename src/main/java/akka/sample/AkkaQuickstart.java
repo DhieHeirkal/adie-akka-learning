@@ -1,18 +1,20 @@
-package com.lightbend.akka.sample;
+package akka.sample;
 
 import java.io.IOException;
 
-import com.lightbend.akka.sample.Greeter.Greet;
-import com.lightbend.akka.sample.Greeter.WhoToGreet;
+import akka.sample.Greeter.Greet;
+import akka.sample.Greeter.WhoToGreet;
 
 import akka.actor.ActorRef;
 import akka.actor.ActorSystem;
 
 /**
  * https://doc.akka.io/docs/akka/2.5.20/actors.html#introduction
+ * 
+ * General Doc about actor: https://doc.akka.io/docs/akka/2.5.20/general/actor-systems.html
  */
 public class AkkaQuickstart {
-	
+	 
   public static void main(String[] args) {
     final ActorSystem system = ActorSystem.create("helloakka");
     

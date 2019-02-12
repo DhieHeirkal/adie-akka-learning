@@ -1,4 +1,4 @@
-package com.lightbend.akka.sample;
+package akka.sample;
 
 import akka.actor.AbstractActor;
 import akka.actor.Props;
@@ -20,12 +20,10 @@ public class Printer extends AbstractActor {
       this.message = message;
     }
   }
-  //#printer-messages
 
   private LoggingAdapter log = Logging.getLogger(getContext().getSystem(), this);
 
-  public Printer() {
-  }
+  public Printer() { }
 
   @Override
   public Receive createReceive() {
@@ -35,5 +33,4 @@ public class Printer extends AbstractActor {
         })
         .build();
   }
-//#printer-messages
 }
