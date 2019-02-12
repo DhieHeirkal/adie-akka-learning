@@ -1,4 +1,4 @@
-package supervision;
+package akka.supervision;
 
 /**
  * Represents an arithmetic expression involving integer numbers

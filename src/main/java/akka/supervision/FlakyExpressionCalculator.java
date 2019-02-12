@@ -1,14 +1,14 @@
-package supervision;
+package akka.supervision;
 
-//import akka.actor.AbstractLoggingActor;
-//import akka.actor.OneForOneStrategy;
-//import akka.actor.Props;
-//import akka.actor.SupervisorStrategy;
-import akka.actor.*;
+import akka.actor.AbstractLoggingActor;
+import akka.actor.OneForOneStrategy;
+import akka.actor.Props;
+import akka.actor.SupervisorStrategy;
+
 import akka.japi.pf.DeciderBuilder;
 
-import static supervision.Expression.*;
-import static supervision.FlakyExpressionCalculator.Position.*;
+import static akka.supervision.Expression.*;
+import static akka.supervision.FlakyExpressionCalculator.Position.*;
 
 import java.util.HashMap;
 import java.util.Map;

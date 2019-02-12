@@ -1,24 +1,24 @@
-package supervision;
+package akka.supervision;
 
 import java.util.HashMap;
 import java.util.Map;
 
-//import akka.actor.AbstractLoggingActor;
-//import akka.actor.ActorRef;
-//import akka.actor.OneForOneStrategy;
-//import akka.actor.SupervisorStrategy;
-import akka.actor.*;
+import akka.actor.AbstractLoggingActor;
+import akka.actor.ActorRef;
+import akka.actor.OneForOneStrategy;
+import akka.actor.Status;
+import akka.actor.SupervisorStrategy;
+
 import akka.japi.pf.DeciderBuilder;
 
-import static supervision.FlakyExpressionCalculator.FlakinessException;
-import static supervision.FlakyExpressionCalculator.Result;
-import static supervision.FlakyExpressionCalculator.Position.Left;
+import static akka.supervision.FlakyExpressionCalculator.FlakinessException;
+import static akka.supervision.FlakyExpressionCalculator.Result;
+import static akka.supervision.FlakyExpressionCalculator.Position.Left;
 
 /**
  * A very simple service that accepts arithmetic expressions and tries to 
  * evaluate them. Since the calculation is dangerous (at least for the sake 
- * of this example) it is delegated to a worker actor of type FlakyExpressionCalculator.
- */
+ * of this example) it is delegated to a worker actor of type FlakyExpressionCalculator. */
 class ArithmeticService extends AbstractLoggingActor {
 
 	/** Map of workers to the original actors requesting the calculation */
@@ -46,9 +46,7 @@ class ArithmeticService extends AbstractLoggingActor {
 		return strategy;
 	}
 	
-	/**
-	 * 
-	 */
+	/** */
 	@Override
 	public Receive createReceive() {
 		return receiveBuilder()
@@ -65,8 +63,7 @@ class ArithmeticService extends AbstractLoggingActor {
 	/**
 	 * Status.Failure is a message type provided by the Akka library. 
 	 * The reason why it is used is because it is recognized by the "ask" pattern
-	 * and the Future returned by ask will fail with the provided exception.
-	 */
+	 * and the Future returned by ask will fail with the provided exception. */
 	private void notifyConsumerFailure(ActorRef worker, Throwable failure) {
 		ActorRef pending = pendingWorkers.get(worker);
 		if (pending != null) {
@@ -75,9 +72,7 @@ class ArithmeticService extends AbstractLoggingActor {
 		}
 	}
 	
-	/**
-	 * 
-	 */
+	/** */
 	private void notifyConsumerSuccess(ActorRef worker, Integer result) {
 		ActorRef pending = pendingWorkers.get(worker);
 		if (pending != null) {

@@ -1,4 +1,4 @@
-package supervision;
+package akka.supervision;
 
 import java.util.concurrent.TimeUnit;
 
@@ -10,9 +10,8 @@ import akka.util.Timeout;
 import scala.concurrent.Await;
 import scala.concurrent.duration.Duration;
 import scala.concurrent.duration.FiniteDuration;
-import scala.reflect.ClassTag;
 
-import static supervision.Expression.*;
+import static akka.supervision.Expression.*;
 import static akka.pattern.Patterns.ask;
 import static akka.japi.Util.classTag;
 

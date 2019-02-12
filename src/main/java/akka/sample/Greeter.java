@@ -21,8 +21,12 @@ public class Greeter extends AbstractActor {
     this.printerActor = printerActor;
   }
 
-  /**
-   * Inital behavior the Greeter as AbstractActor */
+  /** greeter-messages */
+  static public Props props(String message, ActorRef printerActor) {
+    return Props.create(Greeter.class, () -> new Greeter(message, printerActor));
+  }
+
+  /** Inital behavior the Greeter as AbstractActor */
   @Override
   public Receive createReceive() {
     return receiveBuilder()
@@ -30,22 +34,15 @@ public class Greeter extends AbstractActor {
           this.greeting = message + ", " + whotogreet.who;
         })
         .match(Greet.class, x -> {
-          //#greeter-send-message
+          // greeter-send-message
           printerActor.tell(new Greeting(greeting), getSelf());
         })
         .build();
-  }
-  
-
-  /** greeter-messages */
-  static public Props props(String message, ActorRef printerActor) {
-    return Props.create(Greeter.class, () -> new Greeter(message, printerActor));
   }
 
   /** greeter-messages */
   static public class WhoToGreet {
     public final String who;
-
     public WhoToGreet(String who) {
         this.who = who;
     }

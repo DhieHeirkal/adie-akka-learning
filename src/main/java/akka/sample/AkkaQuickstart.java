@@ -4,7 +4,7 @@ import java.io.IOException;
 
 import akka.sample.Greeter.Greet;
 import akka.sample.Greeter.WhoToGreet;
-
+import akka.sample.Printer.Greeting;
 import akka.actor.ActorRef;
 import akka.actor.ActorSystem;
 
@@ -25,7 +25,9 @@ public class AkkaQuickstart {
       final ActorRef helloGreeter = system.actorOf(Greeter.props("Hello", printerActor), "helloGreeter");
       final ActorRef goodDayGreeter = system.actorOf(Greeter.props("Good day", printerActor), "goodDayGreeter");
 
-      //#main-send-messages
+      /** main-send-messages */      
+      printerActor.tell(new Greeting("From Printer Actor"), ActorRef.noSender());
+      
       howdyGreeter.tell(new WhoToGreet("Akka"), ActorRef.noSender());
       howdyGreeter.tell(new Greet(), ActorRef.noSender());
 
@@ -37,7 +39,6 @@ public class AkkaQuickstart {
 
       goodDayGreeter.tell(new WhoToGreet("Play"), ActorRef.noSender());
       goodDayGreeter.tell(new Greet(), ActorRef.noSender());
-      //#main-send-messages
 
       System.out.println(">>> Press ENTER to exit <<<");
       System.in.read();

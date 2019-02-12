@@ -5,17 +5,18 @@ import akka.actor.Props;
 import akka.event.Logging;
 import akka.event.LoggingAdapter;
 
-//#printer-messages
+/**
+ * printer-messages
+ */
 public class Printer extends AbstractActor {
-//#printer-messages
+
   static public Props props() {
     return Props.create(Printer.class, () -> new Printer());
   }
 
-  //#printer-messages
+  // printer-messages
   static public class Greeting {
     public final String message;
-
     public Greeting(String message) {
       this.message = message;
     }
