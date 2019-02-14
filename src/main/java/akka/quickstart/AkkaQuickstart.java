@@ -1,12 +1,12 @@
-package akka.sample;
+package akka.quickstart;
 
 import java.io.IOException;
 
-import akka.sample.Greeter.Greet;
-import akka.sample.Greeter.WhoToGreet;
-import akka.sample.Printer.Greeting;
 import akka.actor.ActorRef;
 import akka.actor.ActorSystem;
+import akka.quickstart.Greeter.Greet;
+import akka.quickstart.Greeter.WhoToGreet;
+import akka.quickstart.Printer.Greeting;
 
 /**
  * https://developer.lightbend.com/guides/akka-quickstart-java/

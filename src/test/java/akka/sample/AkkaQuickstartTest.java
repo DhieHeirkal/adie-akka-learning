@@ -6,12 +6,12 @@ import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-import akka.sample.Greeter.Greet;
-import akka.sample.Greeter.WhoToGreet;
-import akka.sample.Printer.Greeting;
-
 import akka.actor.ActorRef;
 import akka.actor.ActorSystem;
+import akka.quickstart.Greeter;
+import akka.quickstart.Greeter.Greet;
+import akka.quickstart.Greeter.WhoToGreet;
+import akka.quickstart.Printer.Greeting;
 import akka.testkit.javadsl.TestKit;
 
 public class AkkaQuickstartTest {

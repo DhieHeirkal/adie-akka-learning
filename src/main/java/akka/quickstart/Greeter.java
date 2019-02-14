@@ -1,10 +1,9 @@
-package akka.sample;
+package akka.quickstart;
 
 import akka.actor.AbstractActor;
 import akka.actor.ActorRef;
 import akka.actor.Props;
-
-import akka.sample.Printer.Greeting;
+import akka.quickstart.Printer.Greeting;
 
 /**
  * https://doc.akka.io/docs/akka/2.5.20/actors.html#introduction

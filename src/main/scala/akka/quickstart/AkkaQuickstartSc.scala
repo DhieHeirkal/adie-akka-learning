@@ -1,4 +1,4 @@
-package $package$
+package akka.quickstart
 
 import akka.actor.{ Actor, ActorLogging, ActorRef, ActorSystem, Props }
 

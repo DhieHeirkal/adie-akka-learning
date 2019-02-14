@@ -1,4 +1,4 @@
-package akka.sample;
+package akka.quickstart;
 
 import akka.actor.AbstractActor;
 import akka.actor.Props;
