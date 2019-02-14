@@ -9,9 +9,13 @@ import akka.actor.ActorRef;
 import akka.actor.ActorSystem;
 
 /**
+ * https://developer.lightbend.com/guides/akka-quickstart-java/
+ * https://developer.lightbend.com/guides/akka-quickstart-scala/define-actors.html
+ * 
  * https://doc.akka.io/docs/akka/2.5.20/actors.html#introduction
  * 
  * General Doc about actor: https://doc.akka.io/docs/akka/2.5.20/general/actor-systems.html
+ * 							https://github.com/akka/akka/blob/v2.5.20/akka-docs/src/main/paradox/actors.md
  */
 public class AkkaQuickstart {
 	 
