@@ -3,6 +3,8 @@ package akka.basic;
 /**
  * Fetch from:
  * https://developer.lightbend.com/start/?group=akka&project=akka-samples-main-java
+ * 
+ * runMain akka.basic.BasicAkkaMain
  */
 public class BasicAkkaMain {
 	public static void main(String[] args) {
