@@ -14,6 +14,7 @@ import akka.event.LoggingAdapter;
 
 /**
  * Source code: https://developer.lightbend.com/start/?group=akka&project=akka-samples-cluster-java
+ * https://doc.akka.io/docs/akka/2.5/cluster-usage.html
  */
 public class SimpleClusterListener extends AbstractActor {
 	// 

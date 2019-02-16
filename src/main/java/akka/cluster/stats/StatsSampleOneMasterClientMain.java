@@ -10,6 +10,8 @@ import akka.actor.Props;
  * or see at: akka-cluster-docs.html
  * 
  * runMain akka.cluster.stats.StatsSampleOneMasterClientMain
+ * TODO check diff with:
+ * akka.cluster.stats.StatsSampleOneMasterMain
  */
 public class StatsSampleOneMasterClientMain {
 	public static void main(String[] args) {
