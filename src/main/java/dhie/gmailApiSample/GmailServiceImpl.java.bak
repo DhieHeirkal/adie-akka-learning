@@ -1,0 +1,28 @@
+package services.gmailApiSample;
+
+import java.io.IOException;
+//import com.google.api.client.json.JsonFactory;
+//import com.google.api.client.json.jackson2.JacksonFactory;
+
+import javax.mail.MessagingException;
+
+public final class GmailServiceImpl implements GmailService {
+	
+	private static final String APPLICATION_NAME = "YOUR_APP_NAME";
+	
+//	private static final JsonFactory JSON_FACTORY = JacksonFactory.getDefaultInstance();
+
+	@Override
+	public void setGmailCredentials(GmailCredentials gmailCredentials) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public boolean sendMessage(String recipientAddress, String subject, String body)
+			throws MessagingException, IOException {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+}
